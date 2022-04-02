@@ -12,3 +12,5 @@ ds-sim is a discrete-event simulator that has been developed primarily for lever
 
 `$ ds-client -a bf`
 
+## Me
+`Adrian Dela Cruz | 46509356 | COMP3100 Ass1`
