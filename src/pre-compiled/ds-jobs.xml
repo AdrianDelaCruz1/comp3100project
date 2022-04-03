@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- job list for ds-sim, 14-Feb, 2022 @ MQ - client-server -->
+<jobs>
+	<type name="short" minRunTime="1" maxRunTime="300" populationRate="30" />
+	<type name="medium" minRunTime="301" maxRunTime="1800" populationRate="40" />
+	<type name="long" minRunTime="1801" maxRunTime="100000" populationRate="30" />
+	<job id="0" type="long" submitTime="28" estRunTime="28087" cores="2" memory="1800" disk="3300" />
+	<job id="1" type="medium" submitTime="58" estRunTime="457" cores="2" memory="1300" disk="2600" />
+	<job id="2" type="long" submitTime="105" estRunTime="43725" cores="1" memory="800" disk="1800" />
+	<job id="3" type="medium" submitTime="107" estRunTime="664" cores="1" memory="1000" disk="1900" />
+	<job id="4" type="short" submitTime="119" estRunTime="18" cores="2" memory="2100" disk="3300" />
+	<job id="5" type="long" submitTime="141" estRunTime="19066" cores="1" memory="900" disk="1700" />
+	<job id="6" type="medium" submitTime="146" estRunTime="1625" cores="4" memory="1200" disk="4300" />
+	<job id="7" type="long" submitTime="165" estRunTime="65161" cores="1" memory="700" disk="100" />
+	<job id="8" type="long" submitTime="173" estRunTime="19888" cores="1" memory="200" disk="700" />
+	<job id="9" type="medium" submitTime="176" estRunTime="583" cores="1" memory="300" disk="800" />
+	<job id="10" type="medium" submitTime="185" estRunTime="1419" cores="2" memory="1000" disk="2200" />
+	<job id="11" type="medium" submitTime="189" estRunTime="123" cores="3" memory="1800" disk="3300" />
+	<job id="12" type="short" submitTime="192" estRunTime="113" cores="4" memory="2700" disk="1600" />
+	<job id="13" type="medium" submitTime="288" estRunTime="621" cores="2" memory="600" disk="1400" />
+	<job id="14" type="long" submitTime="293" estRunTime="56676" cores="4" memory="3100" disk="3800" />
+	<job id="15" type="short" submitTime="697" estRunTime="90" cores="3" memory="1500" disk="2400" />
+	<job id="16" type="short" submitTime="858" estRunTime="12" cores="2" memory="900" disk="1200" />
+	<job id="17" type="long" submitTime="885" estRunTime="269" cores="1" memory="400" disk="1900" />
+	<job id="18" type="long" submitTime="944" estRunTime="81724" cores="2" memory="1100" disk="3800" />
+	<job id="19" type="short" submitTime="1263" estRunTime="288" cores="1" memory="200" disk="1600" />
+</jobs>

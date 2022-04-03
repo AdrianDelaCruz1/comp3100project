@@ -1,0 +1,244 @@
+6,7c6,7
+< RCVD AUTH adrian
+< # Welcome  adrian!
+---
+> RCVD AUTH Adrian
+> # Welcome  Adrian!
+12,13c12,13
+< RCVD SCHD 0 t2.aws 0
+< t:         28 job     0 (waiting) on # 0 of server t2.aws (booting) SCHEDULED
+---
+> RCVD SCHD 0 t2.aws 1
+> t:         28 job     0 (waiting) on # 1 of server t2.aws (booting) SCHEDULED
+21c21,22
+< t:         88 job     0 on # 0 of server t2.aws RUNNING
+---
+> t:         88 job     0 on # 1 of server t2.aws RUNNING
+> t:         88 job     1 on # 1 of server t2.aws RUNNING
+23,25c24,26
+< RCVD SCHD 2 t2.aws 0
+< t:        105 job     2 (running) on # 0 of server t2.aws (active) SCHEDULED
+< t:        105 job     2 on # 0 of server t2.aws RUNNING
+---
+> RCVD SCHD 2 t2.aws 1
+> t:        105 job     2 (running) on # 1 of server t2.aws (active) SCHEDULED
+> t:        105 job     2 on # 1 of server t2.aws RUNNING
+30c31,32
+< t:        107 job     3 (waiting) on # 1 of server t2.aws (booting) SCHEDULED
+---
+> t:        107 job     3 (running) on # 1 of server t2.aws (active) SCHEDULED
+> t:        107 job     3 on # 1 of server t2.aws RUNNING
+33,34d34
+< t:        118 job     1 on # 1 of server t2.aws RUNNING
+< t:        118 job     3 on # 1 of server t2.aws RUNNING
+36,38c36,38
+< RCVD SCHD 4 t2.aws 0
+< t:        119 job     4 (running) on # 0 of server t2.aws (active) SCHEDULED
+< t:        119 job     4 on # 0 of server t2.aws RUNNING
+---
+> RCVD SCHD 4 t2.aws 1
+> t:        119 job     4 (running) on # 1 of server t2.aws (active) SCHEDULED
+> t:        119 job     4 on # 1 of server t2.aws RUNNING
+48,50c48,50
+< RCVD SCHD 6 t2.aws 0
+< t:        146 job     6 (running) on # 0 of server t2.aws (active) SCHEDULED
+< t:        146 job     6 on # 0 of server t2.aws RUNNING
+---
+> RCVD SCHD 6 t2.aws 1
+> t:        146 job     6 (running) on # 1 of server t2.aws (active) SCHEDULED
+> t:        146 job     6 on # 1 of server t2.aws RUNNING
+60,62c60,62
+< RCVD SCHD 8 t2.aws 0
+< t:        173 job     8 (running) on # 0 of server t2.aws (active) SCHEDULED
+< t:        173 job     8 on # 0 of server t2.aws RUNNING
+---
+> RCVD SCHD 8 t2.aws 1
+> t:        173 job     8 (running) on # 1 of server t2.aws (active) SCHEDULED
+> t:        173 job     8 on # 1 of server t2.aws RUNNING
+72,74c72,73
+< RCVD SCHD 10 t2.aws 0
+< t:        185 job    10 (running) on # 0 of server t2.aws (active) SCHEDULED
+< t:        185 job    10 on # 0 of server t2.aws RUNNING
+---
+> RCVD SCHD 10 t2.aws 1
+> t:        185 job    10 (waiting) on # 1 of server t2.aws (active) SCHEDULED
+79,80c78
+< t:        189 job    11 (running) on # 1 of server t2.aws (active) SCHEDULED
+< t:        189 job    11 on # 1 of server t2.aws RUNNING
+---
+> t:        189 job    11 (waiting) on # 1 of server t2.aws (active) SCHEDULED
+84,86c82,83
+< RCVD SCHD 12 t2.aws 0
+< t:        192 job    12 (running) on # 0 of server t2.aws (active) SCHEDULED
+< t:        192 job    12 on # 0 of server t2.aws RUNNING
+---
+> RCVD SCHD 12 t2.aws 1
+> t:        192 job    12 (waiting) on # 1 of server t2.aws (active) SCHEDULED
+89,93c86,88
+< t:        200 job     4 on # 0 of server t2.aws COMPLETED
+< SENT JCPL 200 4 t2.aws 0
+< RCVD REDY
+< t:        287 job    12 on # 0 of server t2.aws COMPLETED
+< SENT JCPL 287 12 t2.aws 0
+---
+> t:        200 job     4 on # 1 of server t2.aws COMPLETED
+> t:        200 job    10 on # 1 of server t2.aws RUNNING
+> SENT JCPL 200 4 t2.aws 1
+97,98c92
+< t:        288 job    13 (running) on # 1 of server t2.aws (active) SCHEDULED
+< t:        288 job    13 on # 1 of server t2.aws RUNNING
+---
+> t:        288 job    13 (waiting) on # 1 of server t2.aws (active) SCHEDULED
+102,104c96,97
+< RCVD SCHD 14 t2.aws 0
+< t:        293 job    14 (running) on # 0 of server t2.aws (active) SCHEDULED
+< t:        293 job    14 on # 0 of server t2.aws RUNNING
+---
+> RCVD SCHD 14 t2.aws 1
+> t:        293 job    14 (waiting) on # 1 of server t2.aws (active) SCHEDULED
+107,109d99
+< t:        655 job    11 on # 1 of server t2.aws COMPLETED
+< SENT JCPL 655 11 t2.aws 1
+< RCVD REDY
+112,113c102
+< t:        697 job    15 (running) on # 1 of server t2.aws (active) SCHEDULED
+< t:        697 job    15 on # 1 of server t2.aws RUNNING
+---
+> t:        697 job    15 (waiting) on # 1 of server t2.aws (active) SCHEDULED
+116,120c105,106
+< t:        806 job    15 on # 1 of server t2.aws COMPLETED
+< SENT JCPL 806 15 t2.aws 1
+< RCVD REDY
+< t:        858 job     1 on # 1 of server t2.aws COMPLETED
+< SENT JCPL 858 1 t2.aws 1
+---
+> t:        828 job     1 on # 1 of server t2.aws COMPLETED
+> SENT JCPL 828 1 t2.aws 1
+123,125c109,110
+< RCVD SCHD 16 t2.aws 0
+< t:        858 job    16 (running) on # 0 of server t2.aws (active) SCHEDULED
+< t:        858 job    16 on # 0 of server t2.aws RUNNING
+---
+> RCVD SCHD 16 t2.aws 1
+> t:        858 job    16 (waiting) on # 1 of server t2.aws (active) SCHEDULED
+128,130d112
+< t:        870 job    16 on # 0 of server t2.aws COMPLETED
+< SENT JCPL 870 16 t2.aws 0
+< RCVD REDY
+133,134c115
+< t:        885 job    17 (running) on # 1 of server t2.aws (active) SCHEDULED
+< t:        885 job    17 on # 1 of server t2.aws RUNNING
+---
+> t:        885 job    17 (waiting) on # 1 of server t2.aws (active) SCHEDULED
+138,140c119,120
+< RCVD SCHD 18 t2.aws 0
+< t:        944 job    18 (running) on # 0 of server t2.aws (active) SCHEDULED
+< t:        944 job    18 on # 0 of server t2.aws RUNNING
+---
+> RCVD SCHD 18 t2.aws 1
+> t:        944 job    18 (waiting) on # 1 of server t2.aws (active) SCHEDULED
+143,144c123,125
+< t:       1227 job    10 on # 0 of server t2.aws COMPLETED
+< SENT JCPL 1227 10 t2.aws 0
+---
+> t:       1242 job    10 on # 1 of server t2.aws COMPLETED
+> t:       1242 job    11 on # 1 of server t2.aws RUNNING
+> SENT JCPL 1242 10 t2.aws 1
+148,149c129
+< t:       1263 job    19 (running) on # 1 of server t2.aws (active) SCHEDULED
+< t:       1263 job    19 on # 1 of server t2.aws RUNNING
+---
+> t:       1263 job    19 (waiting) on # 1 of server t2.aws (active) SCHEDULED
+152,153c132,134
+< t:       1286 job     6 on # 0 of server t2.aws COMPLETED
+< SENT JCPL 1286 6 t2.aws 0
+---
+> t:       1286 job     6 on # 1 of server t2.aws COMPLETED
+> t:       1286 job    12 on # 1 of server t2.aws RUNNING
+> SENT JCPL 1286 6 t2.aws 1
+155,156c136,138
+< t:       1359 job    13 on # 1 of server t2.aws COMPLETED
+< SENT JCPL 1359 13 t2.aws 1
+---
+> t:       1381 job    12 on # 1 of server t2.aws COMPLETED
+> t:       1381 job    13 on # 1 of server t2.aws RUNNING
+> SENT JCPL 1381 12 t2.aws 1
+158,159c140,142
+< t:       1427 job    19 on # 1 of server t2.aws COMPLETED
+< SENT JCPL 1427 19 t2.aws 1
+---
+> t:       1708 job    11 on # 1 of server t2.aws COMPLETED
+> t:       1708 job    14 on # 1 of server t2.aws RUNNING
+> SENT JCPL 1708 11 t2.aws 1
+161,162c144,155
+< t:       1818 job     3 on # 1 of server t2.aws COMPLETED
+< SENT JCPL 1818 3 t2.aws 1
+---
+> t:       1807 job     3 on # 1 of server t2.aws COMPLETED
+> t:       1807 job    15 on # 1 of server t2.aws RUNNING
+> SENT JCPL 1807 3 t2.aws 1
+> RCVD REDY
+> t:       1916 job    15 on # 1 of server t2.aws COMPLETED
+> t:       1916 job    16 on # 1 of server t2.aws RUNNING
+> t:       1916 job    17 on # 1 of server t2.aws RUNNING
+> SENT JCPL 1916 15 t2.aws 1
+> RCVD REDY
+> t:       1928 job    16 on # 1 of server t2.aws COMPLETED
+> t:       1928 job    18 on # 1 of server t2.aws RUNNING
+> SENT JCPL 1928 16 t2.aws 1
+164a158
+> t:       1964 job    19 on # 1 of server t2.aws RUNNING
+167,168c161,168
+< t:      12995 job     8 on # 0 of server t2.aws COMPLETED
+< SENT JCPL 12995 8 t2.aws 0
+---
+> t:       2128 job    19 on # 1 of server t2.aws COMPLETED
+> SENT JCPL 2128 19 t2.aws 1
+> RCVD REDY
+> t:       2452 job    13 on # 1 of server t2.aws COMPLETED
+> SENT JCPL 2452 13 t2.aws 1
+> RCVD REDY
+> t:      12995 job     8 on # 1 of server t2.aws COMPLETED
+> SENT JCPL 12995 8 t2.aws 1
+173,174c173,174
+< t:      41001 job     2 on # 0 of server t2.aws COMPLETED
+< SENT JCPL 41001 2 t2.aws 0
+---
+> t:      41001 job     2 on # 1 of server t2.aws COMPLETED
+> SENT JCPL 41001 2 t2.aws 1
+176,177c176,177
+< t:      48722 job    14 on # 0 of server t2.aws COMPLETED
+< SENT JCPL 48722 14 t2.aws 0
+---
+> t:      50137 job    14 on # 1 of server t2.aws COMPLETED
+> SENT JCPL 50137 14 t2.aws 1
+179,180c179,180
+< t:      63912 job     0 on # 0 of server t2.aws COMPLETED
+< SENT JCPL 63912 0 t2.aws 0
+---
+> t:      63912 job     0 on # 1 of server t2.aws COMPLETED
+> SENT JCPL 63912 0 t2.aws 1
+182,183c182,183
+< t:      70055 job    18 on # 0 of server t2.aws COMPLETED
+< SENT JCPL 70055 18 t2.aws 0
+---
+> t:      71039 job    18 on # 1 of server t2.aws COMPLETED
+> SENT JCPL 71039 18 t2.aws 1
+188,189c188,189
+< t:      91287 job    17 on # 1 of server t2.aws COMPLETED
+< SENT JCPL 91287 17 t2.aws 1
+---
+> t:      92318 job    17 on # 1 of server t2.aws COMPLETED
+> SENT JCPL 92318 17 t2.aws 1
+198c198
+< # 2 t2.aws servers used with a utilisation of 100.00 at the cost of $35.81
+---
+> # 1 t2.aws servers used with a utilisation of 100.00 at the cost of $20.50
+200,202c200,202
+< # actual simulation end time: 91287, #jobs: 20 (failed 0 times)
+< # total #servers used: 2, avg util: 100.00% (ef. usage: 100.00%), total cost: $35.81
+< # avg waiting time: 6, avg exec time: 21374, avg turnaround time: 21380
+---
+> # actual simulation end time: 92318, #jobs: 20 (failed 0 times)
+> # total #servers used: 1, avg util: 100.00% (ef. usage: 100.00%), total cost: $20.50
+> # avg waiting time: 482, avg exec time: 21374, avg turnaround time: 21856

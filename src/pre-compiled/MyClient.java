@@ -23,7 +23,7 @@ public class MyClient {
             String str = (String) in.readLine();
             System.out.println(str);
 
-            dout.write(("AUTH adrian\n").getBytes()); // Authentication
+            dout.write(("AUTH Adrian\n").getBytes()); // Authentication
             str = (String) in.readLine();
             System.out.println(str);
 
@@ -32,7 +32,7 @@ public class MyClient {
                 str = (String) in.readLine();
                 System.out.println(str);
 
-                while (str.contains("JCPL")) { //try to change
+                while (str.contains("JCPL")) {
                     dout.write(("REDY\n").getBytes());
                     str = (String) in.readLine();
                     System.out.println(str);
@@ -66,11 +66,14 @@ public class MyClient {
                     }
                 }
 
+                System.out.println(
+                        "The largest server type is: " + largestServType + ", and the no. of servers are: " + nServers);
+
                 dout.write(("OK\n").getBytes());
                 str = (String) in.readLine();
                 System.out.println(str);
 
-                dout.write(("SCHD " + jobID + " " + largestServType + " " + jobID % nServers + "\n").getBytes());
+                dout.write(("SCHD " + jobID + " " + largestServType + " " + arrServer[1] + "\n").getBytes());
                 str = (String) in.readLine();
                 System.out.println(str);
 
