@@ -3,8 +3,8 @@
 # Waiting for connection to port 50000 of IP address 127.0.0.1
 RCVD HELO
 SENT OK
-RCVD AUTH Adrian
-# Welcome  Adrian!
+RCVD AUTH adrian
+# Welcome  adrian!
 # The system information can be read from 'ds-system.xml'
 SENT OK
 RCVD REDY
