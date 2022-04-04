@@ -33,17 +33,17 @@ public class MyClient {
                 str = (String) in.readLine();
                 System.out.println(str);
 
-                while (str.contains("JCPL")) { // try to change
+                while (str.contains("JCPL")) { 
                     dout.write(("REDY\n").getBytes());
                     str = (String) in.readLine();
                     System.out.println(str);
                 }
 
-                if (str.contains("NONE")) {
-                    break;
+                if (str.contains("NONE")) { //Break if msg is NONE
+                    break; 
                 }
 
-                arrJob = str.split(" ");
+                arrJob = str.split(" "); //split up JOB into separate strings
                 dout.write(("GETS Capable " + arrJob[4] + " " + arrJob[5] + " " + arrJob[6] + "\n").getBytes());
                 str = (String) in.readLine();
                 System.out.println(str);
@@ -58,7 +58,7 @@ public class MyClient {
                     System.out.println(str);
                     arrServer = str.split(" ");
                     Integer numCores = Integer.valueOf(arrServer[4]);
-                    if (numCores > maxCores) {
+                    if (numCores > maxCores) { //comparing cores
                         maxCores = numCores;
                         largestServType = arrServer[0];
                         nServers = 1;
@@ -73,7 +73,7 @@ public class MyClient {
                 str = (String) in.readLine();
                 System.out.println(str);
 
-                dout.write(("SCHD " + jobID + " " + largestServType + " " + servID + "\n").getBytes()); // schd'ing
+                dout.write(("SCHD " + jobID + " " + largestServType + " " + servID + "\n").getBytes()); // scheduling of jobs
                 System.out.println("SCHD " + jobID + " " + largestServType + " " + jobID % nServers + "\n");
                 str = (String) in.readLine();
                 System.out.println(str);
@@ -84,7 +84,7 @@ public class MyClient {
                 nServers = 0;
             }
 
-            dout.write(("QUIT\n").getBytes());
+            dout.write(("QUIT\n").getBytes()); //Quiting when no more jobs left
             dout.close();
             s.close();
 
