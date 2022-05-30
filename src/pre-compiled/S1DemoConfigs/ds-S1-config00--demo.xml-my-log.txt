@@ -459,11 +459,3 @@ t:      87391 job    49 on # 0 of server ant COMPLETED
 SENT JCPL 87391 49 ant 0
 RCVD REDY
 SENT NONE
-RCVD QUIT
-SENT QUIT
-# -------------------------------------------------------------------------------------
-# 1 ant servers used with a utilisation of 93.12 at the cost of $2.43
-# ==================================== [ Summary ] ====================================
-# actual simulation end time: 87391, #jobs: 50 (failed 0 times)
-# total #servers used: 1, avg util: 93.12% (ef. usage: 93.12%), total cost: $2.43
-# avg waiting time: 12, avg exec time: 1636, avg turnaround time: 1648

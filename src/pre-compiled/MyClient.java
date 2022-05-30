@@ -84,13 +84,15 @@ public class MyClient {
                 nServers = 0;
             }
 
+            while(!(in.readLine().contains("OK"))) {
+                str = (String) in.readLine();
+            }
+
             dout.write(("QUIT\n").getBytes()); //Quiting when no more jobs left
             dout.close();
             s.close();
 
-        } catch (
-
-        Exception e) {
+        } catch (Exception e) {
             System.out.println(e);
         }
     }

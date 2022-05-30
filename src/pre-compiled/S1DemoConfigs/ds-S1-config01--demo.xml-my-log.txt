@@ -189,14 +189,3 @@ t:      92318 job    17 on # 0 of server t2.aws COMPLETED
 SENT JCPL 92318 17 t2.aws 0
 RCVD REDY
 SENT NONE
-RCVD QUIT
-SENT QUIT
-# -------------------------------------------------------------------------------------
-# 0 t1.micro servers used with a utilisation of 0.00 at the cost of $0.00
-# 0 t1.small servers used with a utilisation of 0.00 at the cost of $0.00
-# 0 t1.medium servers used with a utilisation of 0.00 at the cost of $0.00
-# 1 t2.aws servers used with a utilisation of 100.00 at the cost of $20.50
-# ==================================== [ Summary ] ====================================
-# actual simulation end time: 92318, #jobs: 20 (failed 0 times)
-# total #servers used: 1, avg util: 100.00% (ef. usage: 100.00%), total cost: $20.50
-# avg waiting time: 482, avg exec time: 21374, avg turnaround time: 21856
